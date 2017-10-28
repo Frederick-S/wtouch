@@ -1,5 +1,6 @@
 def create_file(file_name):
     try:
-        open(file_name, 'x')
+        with open(file_name, 'x') as f:
+            pass
     except FileExistsError as e:
         pass
