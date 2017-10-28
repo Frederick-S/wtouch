@@ -12,6 +12,8 @@ class TestTouch(unittest.TestCase):
 
         self.assertTrue(os.path.exists(os.path.join(current_path, file_name)))
 
+        create_file(file_name)
+
     def tearDown(self):
         file_name = 'test.js'
         current_path = os.path.join(os.getcwd(), '.')
