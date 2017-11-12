@@ -34,5 +34,6 @@ class TestCli(unittest.TestCase):
 
         os.remove(os.path.join(current_path, file_name))
 
+
 if __name__ == '__main__':
     unittest.main()
